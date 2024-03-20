@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 git clone https://github.com/ilikenwf/apt-fast.git
-
+sudo apt -y install aria2
 
 sudo cp apt-fast/apt-fast /usr/sbin/
 sudo cp files/apt-fast.conf /etc/
