@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+cd
+
 git clone https://github.com/ilikenwf/apt-fast.git
 sudo apt -y install aria2
 
@@ -19,6 +21,11 @@ sudo apt update
 sudo apt-fast -y upgrade
 sudo apt autoremove -y
 
+
+cd ~/deploy/ffmpeg
+./build.sh
+
+
 # add repos
 
 # multiverse (needed for steam)
@@ -35,7 +42,7 @@ sudo add-apt-repository -y ppa:musicbrainz-developers/stable
 
 # install new apps from repos
 sudo apt update
-sudo apt-fast -y install ffmpeg obs-studio firefox-trunk steam picard
+sudo apt-fast -y install obs-studio firefox-trunk steam picard
 
 
 # install standalone deb apps
