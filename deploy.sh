@@ -2,6 +2,10 @@
 
 cd
 
+
+# because learning github token auth is a future me problem
+find deploy -type f -iname "*.sh" -exec chmod +x "{}" +
+
 git clone https://github.com/ilikenwf/apt-fast.git
 sudo apt -y install aria2
 
