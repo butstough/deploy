@@ -3,9 +3,13 @@ deployment scripts for ubuntu stream PC setup
 
 usage: 
 clone this repository, cd into 'deploy' and run deploy.sh
+
 ```git clone https://github.com/butstough/deploy.git```
+
 ```cd deploy```
+
 ```./deploy.sh```
+
 
 currently the script installs apt-fast, updates the PC and proceeds to install several software utilities for a gaming/streaming PC setup.
 
