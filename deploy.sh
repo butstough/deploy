@@ -30,9 +30,12 @@ sudo add-apt-repository -y ppa:obsproject/obs-studio
 # firefox nightly
 sudo add-apt-repository -y ppa:ubuntu-mozilla-daily/ppa
 
+# musicbrainz
+sudo add-apt-repository -y ppa:musicbrainz-developers/stable
+
 # install new apps from repos
 sudo apt update
-sudo apt-fast -y install ffmpeg obs-studio firefox-trunk steam
+sudo apt-fast -y install ffmpeg obs-studio firefox-trunk steam picard
 
 
 # install standalone deb apps
