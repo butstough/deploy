@@ -1,17 +1,13 @@
 #!/usr/bin/bash
 
-cd
-
-
-# because learning github token auth is a future me problem
-find deploy -type f -iname "*.sh" -exec chmod +x "{}" +
+cd ~
 
 git clone https://github.com/ilikenwf/apt-fast.git
-sudo apt -y install aria2
+sudo apt -y install --install-recommends aria2
 
 sudo cp apt-fast/apt-fast /usr/sbin/
 sudo cp files/apt-fast.conf /etc/
-sudo cp apt-fast/apt-fast.comp /etc/bash_completion.d/apt-fast
+sudo cp apt-fast/completions/bash/apt-fast.comp /etc/bash_completion.d/apt-fast
 
 sudo chmod +x /usr/sbin/apt-fast
 
@@ -19,7 +15,8 @@ sudo chown root:root /etc/apt-fast.conf
 sudo chown root:root /usr/sbin/apt-fast
 sudo chown root:root /etc/bash_completion.d/apt-fast
 
-#. /etc/bash_completion
+source ~/.profile
+
 
 sudo apt update
 sudo apt-fast -y upgrade
@@ -31,6 +28,15 @@ cd ~/deploy/ffmpeg
 
 
 # add repos
+
+# enable 32 bit
+sudo dpkg --add-architecture i386
+
+# wine
+sudo mkdir -pm755 /etc/apt/keyrings
+sudo wget -O /etc/apt/keyrings/winehq-archive.key "https://dl.winehq.org/wine-builds/winehq.key"
+sudo wget -NP /etc/apt/sources.list.d/ "https://dl.winehq.org/wine-builds/ubuntu/dists/jammy/winehq-jammy.sources"
+
 
 # multiverse (needed for steam)
 sudo add-apt-repository -y multiverse
@@ -46,7 +52,7 @@ sudo add-apt-repository -y ppa:musicbrainz-developers/stable
 
 # install new apps from repos
 sudo apt update
-sudo apt-fast -y install obs-studio firefox-trunk steam picard
+sudo apt-fast -y install --install-recommends obs-studio firefox-trunk steam picard winehq-stable
 
 
 # install standalone deb apps
