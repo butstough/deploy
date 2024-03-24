@@ -20,6 +20,9 @@ reaper
 x-plane  
 ethtool
 
-xdg-desktop-portal-wlr
+
+#remove xdg-desktop-portal-gtk
+
+xdg-desktop-portal-kde
 slurp
 
