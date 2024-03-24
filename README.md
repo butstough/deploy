@@ -21,8 +21,6 @@ x-plane
 ethtool
 
 
-#remove xdg-desktop-portal-gtk
-
 
 
 
