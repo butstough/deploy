@@ -20,7 +20,6 @@ reaper
 x-plane  
 ethtool
 
-
-
-
+xdg-desktop-portal-wlr
+slurp
 
