@@ -18,6 +18,8 @@ these are mainly for my own use, feel free to use them but do so at your own ris
 chatterino  
 reaper  
 x-plane  
+ethtool
+
 
 
 
