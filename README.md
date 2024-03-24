@@ -23,6 +23,9 @@ ethtool
 
 #remove xdg-desktop-portal-gtk
 
-xdg-desktop-portal-kde
-slurp
+xdg-desktop-portal-kde  
+slurp  
+pipewire-pulse  
+
+
 
