@@ -52,7 +52,7 @@ sudo add-apt-repository -y ppa:musicbrainz-developers/stable
 
 # install new apps from repos
 sudo apt update
-sudo apt-fast -y install --install-recommends obs-studio firefox-trunk steam picard winehq-stable
+sudo apt-fast -y install --install-recommends obs-studio firefox-trunk steam picard winehq-stable vim
 
 
 # install standalone deb apps
