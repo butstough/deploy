@@ -50,8 +50,8 @@ sudo apt-fast -y upgrade
 # shoutouts chat gippity for this magic 
 ./amdgpu.sh
 
-# install other multimedia apps
-sudo apt-fast -y install --install-recommends picard winehq-stable
+# install other software
+sudo apt-fast -y install --install-recommends inotify-tools picard winehq-stable
 # post-install autoremove
 sudo apt autoremove -y
 
