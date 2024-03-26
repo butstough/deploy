@@ -21,6 +21,7 @@ source ~/.profile
 
 cd ~
 
+
 # discord
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo dpkg -i discord.deb
@@ -42,9 +43,15 @@ sudo add-apt-repository -y ppa:chatterino/chatterino2
 # update system and install new software through apt
 sudo apt update
 # install sign-ins and editor
-sudo apt-fast -y install --install-recommends chatterino firefox-trunk steam vim
+sudo apt-fast -y install --install-recommends chatterino firefox-trunk nfs-common steam vim
 # update the system software
 sudo apt-fast -y upgrade
+
+sudo mkdir /steam /xplane
+sudo chown 1000:1000 /steam /xplane
+echo "10.10.10.1:/steam /steam nfs defaults 0 0" | sudo tee -a /etc/fstab
+echo "10.10.10.1:/xplane /xplane nfs defaults 0 0" | sudo tee -a /etc/fstab
+sudo mount -a
 
 # install amdgpu driver
 # shoutouts chat gippity for this magic 
