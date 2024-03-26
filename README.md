@@ -17,9 +17,11 @@ these are mainly for my own use, feel free to use them but do so at your own ris
 # TODO  
 chatterino  
 reaper  
-x-plane  
 ethtool
+tenacity
 
+
+x-plane  
 figure out why obs is sucking the big one like all the time
 
 
