@@ -19,6 +19,8 @@ source ~/.profile
 
 # install standalone deb apps
 
+cd ~
+
 # discord
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
 sudo dpkg -i discord.deb
