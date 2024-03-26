@@ -43,7 +43,7 @@ sudo add-apt-repository -y ppa:chatterino/chatterino2
 # update system and install new software through apt
 sudo apt update
 # install sign-ins and editor
-sudo apt-fast -y install --install-recommends chatterino firefox-trunk nfs-common steam vim
+sudo apt-fast -y install --install-recommends chatterino firefox-trunk nfs-common cifs-utils steam vim
 # update the system software
 sudo apt-fast -y upgrade
 
