@@ -21,6 +21,7 @@ source ~/.profile
 
 cd ~
 
+mkdir mounts
 
 # discord
 wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
@@ -50,7 +51,8 @@ sudo apt-fast -y upgrade
 sudo mkdir /steam /xplane
 sudo chown 1000:1000 /steam /xplane
 echo "10.10.10.1:/steam /steam nfs defaults 0 0" | sudo tee -a /etc/fstab
-echo "10.10.10.1:/xplane /xplane nfs defaults 0 0" | sudo tee -a /etc/fstab
+echo "//10.10.10.1:/home/buts/mounts /home/buts/mounts cifs rw,uid=1000,gid=1000,cred=/root/imgay,nofail,netdev_ 0 0" | sudo tee -a /etc/fstab
+
 sudo mount -a
 
 # install amdgpu driver
