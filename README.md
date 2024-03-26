@@ -17,7 +17,7 @@ these are mainly for my own use, feel free to use them but do so at your own ris
 # TODO  
 chatterino  
 reaper  
-ethtool
+ethtool  
 tenacity
 
 
