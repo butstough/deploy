@@ -14,8 +14,7 @@ currently the script installs apt-fast, updates the PC and proceeds to install s
 these are mainly for my own use, feel free to use them but do so at your own risk.  
 
 # TODO  
-disable pulse suspend  
-chatterino  
+disable pulse suspend    
 reaper  
 ethtool  
 tenacity
