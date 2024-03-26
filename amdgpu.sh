@@ -28,5 +28,5 @@ sudo dpkg -i "$LATEST_DEB"
 # You might need to run apt-get install -f to resolve dependencies.
 sudo apt-fast install -f
 
-amdgpu-install -y --accept-eula --usecase=dkms,graphics,multimedia,multimediasdk,workstation,rocm,rocmdev,lrt,amf,opencl,openclsdk,mllib,mlsdk 
+amdgpu-install -y --accept-eula --usecase=dkms,graphics,hip,amf
 
