@@ -43,6 +43,11 @@ sudo apt update
 sudo apt-fast -y install --install-recommends chatterino firefox-trunk steam vim
 # update the system software
 sudo apt-fast -y upgrade
+
+# install amdgpu driver
+# shoutouts chat gippity for this magic 
+./amdgpu.sh
+
 # install other multimedia apps
 sudo apt-fast -y install --install-recommends picard winehq-stable
 # post-install autoremove
