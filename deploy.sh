@@ -41,9 +41,9 @@ sudo add-apt-repository -y ppa:chatterino/chatterino2
 
 # update system and install new software through apt
 sudo apt update
+sudo apt-fast -y install --install-recommends chatterino firefox-trunk steam picard winehq-stable vim
 sudo apt-fast -y upgrade
 sudo apt autoremove -y
-sudo apt-fast -y install --install-recommends chatterino firefox-trunk steam picard winehq-stable vim
 
 # build and install ffmpeg
 cd ~/deploy/ffmpeg
