@@ -37,24 +37,25 @@ sudo add-apt-repository -y ppa:musicbrainz-developers/stable
 #chatterino
 sudo add-apt-repository -y ppa:chatterino/chatterino2
 
-
-
 # update system and install new software through apt
 sudo apt update
-sudo apt-fast -y install --install-recommends chatterino firefox-trunk steam picard winehq-stable vim
+# install sign-ins and editor
+sudo apt-fast -y install --install-recommends chatterino firefox-trunk steam vim
+# update the system software
 sudo apt-fast -y upgrade
+# install other multimedia apps
+sudo apt-fast -y install --install-recommends picard winehq-stable
+# post-install autoremove
 sudo apt autoremove -y
 
 # build and install ffmpeg
 cd ~/deploy/ffmpeg
 ./build.sh
-
 # obs studio
 sudo add-apt-repository -y ppa:obsproject/obs-studio
 # install obs
 sudo apt update
 sudo apt-fast -y install --install-recommends obs-studio
-
 
 # enable 32 bit
 sudo dpkg --add-architecture i386
