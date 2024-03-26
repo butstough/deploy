@@ -16,7 +16,7 @@ these are mainly for my own use, feel free to use them but do so at your own ris
 
 # TODO  
 vim  
-disable pulse suspend
+disable pulse suspend  
 chatterino  
 reaper  
 ethtool  
