@@ -20,6 +20,8 @@ reaper
 x-plane  
 ethtool
 
+figure out why obs is sucking the big one like all the time
+
 
 
 
